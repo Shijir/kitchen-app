@@ -1,0 +1,20 @@
+.search-orders {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+
+    height: 2rem;
+    input {
+        width: 300px;
+        height: 1.6rem;
+    }
+    label {
+        height: 2rem;
+        line-height: 2rem;
+        margin-right: 0.5rem;
+    }
+    .filter-matches {
+        line-height: 2rem;
+        padding: 0 1rem;
+    }
+}

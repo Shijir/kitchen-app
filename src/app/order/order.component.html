@@ -1,0 +1,16 @@
+<div class="order-wrapper">
+    <div class="event_name" [ngSwitch]="eventName">
+
+        <some-element *ngSwitchCase="'CREATED'">🧾 Created</some-element>
+        <some-element *ngSwitchCase="'COOKED'">👨🏻‍🍳 Cooked</some-element>
+        <some-element *ngSwitchCase="'DRIVER_RECEIVED'">🚗 Driver received</some-element>
+        <some-element *ngSwitchCase="'DELIVERED'">✅ Delivered</some-element>
+        <some-element *ngSwitchCase="'CANCELLED'">❌ Cancelled</some-element>
+        <some-element *ngSwitchDefault>⌛️</some-element>
+
+    </div>
+    <div class="customer">{{customer}}</div>
+    <div class="item">{{item}}</div>
+    <div class="price">$ {{price}}</div>
+    <div class="destination">📍 {{destination}}</div>
+</div>

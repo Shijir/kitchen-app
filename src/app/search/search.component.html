@@ -1,0 +1,7 @@
+<div class="search-orders">
+    <label for="search-orders-input">Search orders by price:</label>
+    <input id="search-orders-input" type="number"  [(ngModel)]="priceFilter">
+    <span *ngIf="priceFilter" class="filter-matches">
+      There are {{numberOfMatches}} matches.
+    </span>
+</div>
